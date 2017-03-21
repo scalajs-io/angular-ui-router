@@ -1,4 +1,5 @@
-package io.scalajs.npm.angularjs.uirouter
+package io.scalajs.npm.angularjs
+package uirouter
 
 import scala.language.implicitConversions
 import scala.scalajs.js

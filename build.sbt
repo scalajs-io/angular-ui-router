@@ -5,14 +5,15 @@ import sbt._
 
 import scala.language.postfixOps
 
-val apiVersion = "0.4.2"
-val scalaJsIOVersion = "0.3.0.7"
+val apiVersion = "0.4.2-1"
+val scalaJsIOVersion = "0.3.0.8"
 val scalaJsVersion = "2.12.1"
 
 homepage := Some(url("https://github.com/scalajs-io/angular-ui-router"))
 
 lazy val root = (project in file(".")).
   enablePlugins(ScalaJSPlugin).
+  settings(publishingSettings: _*).
   settings(
     name := "angular-ui-router",
     organization := "io.scalajs.npm",
@@ -24,10 +25,10 @@ lazy val root = (project in file(".")).
     autoCompilerPlugins := true,
     scalaJSModuleKind := ModuleKind.CommonJSModule,
     libraryDependencies ++= Seq(
-	    "org.scala-lang" % "scala-reflect" % scalaJsVersion,
-	    "org.scalatest" %%% "scalatest" % "3.0.1" % "test",
-	    "io.scalajs.npm" %%% "angular" % "1.6.3"
-  ))
+      "org.scala-lang" % "scala-reflect" % scalaJsVersion,
+      "org.scalatest" %%% "scalatest" % "3.0.1" % "test",
+      "io.scalajs.npm" %%% "angular" % "1.6.3-1"
+    ))
 
 /////////////////////////////////////////////////////////////////////////////////
 //      Publishing

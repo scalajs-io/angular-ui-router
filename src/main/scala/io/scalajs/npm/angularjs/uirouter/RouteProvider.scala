@@ -1,6 +1,5 @@
-package io.scalajs.npm.angularjs.uirouter
-
-import io.scalajs.npm.angularjs.Provider
+package io.scalajs.npm.angularjs
+package uirouter
 
 import scala.scalajs.js
 
