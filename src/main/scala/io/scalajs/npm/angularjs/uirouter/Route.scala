@@ -2,6 +2,7 @@ package io.scalajs.npm.angularjs
 package uirouter
 
 import scala.scalajs.js
+import scala.scalajs.js.annotation.JSGlobal
 
 /**
   * \$route is used for deep-linking URLs to controllers and views (HTML partials).
@@ -9,6 +10,7 @@ import scala.scalajs.js
   * @see [[https://docs.angularjs.org/api/ngRoute/service/\$route]]
   * @author lawrence.daniels@gmail.com
   */
+@JSGlobal
 @js.native
 class Route extends js.Object {
 

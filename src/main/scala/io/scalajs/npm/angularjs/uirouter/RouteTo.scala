@@ -1,10 +1,8 @@
 package io.scalajs.npm.angularjs
 package uirouter
 
-import scala.language.implicitConversions
 import scala.scalajs.js
 import scala.scalajs.js.UndefOr
-import scala.scalajs.js.annotation.ScalaJSDefined
 
 /**
   * Type-Safe AngularJS Route
@@ -31,7 +29,6 @@ import scala.scalajs.js.annotation.ScalaJSDefined
   *                             then the particular route can be matched without being case sensitive.
   * @author lawrence.daniels@gmail.com
   */
-@ScalaJSDefined
 class RouteTo(val controller: UndefOr[String] = js.undefined,
               val controllerFn: UndefOr[js.Function] = js.undefined,
               val controllerAs: UndefOr[String] = js.undefined,
